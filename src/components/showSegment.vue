@@ -109,13 +109,7 @@
             // this.setSelectOption();
             },
           methods:{
-            // setSelectOption(){
-            //   let data ={};
-            //   data = qs.stringify(data);
-            //   API.getclasses(data).then(res=>{
-            //     this.options=res;
-            //   })
-            // },
+          
             handleCurrentChange(val) {  
             this.currentPage = val;  
             this.fetchData(); // 更新表格数据  
@@ -233,29 +227,7 @@
               //将二进制字符串转为base64字符串
               return window.btoa(binary);
             },
-            // lookStudentInfo(index,row){
-            //   this.dialogVisible1=true
-            //   let data = {
-            //     id_st:row.id_st,
-            //   };
-            //   data = qs.stringify(data);
-            //   API.getStudentInfo(data).then(res=>{
-            //     this.form=res;
-            //   })
-            // },
-            // selectByClass(){
-            //   let data = {
-            //     id_cl:parseInt(this.optionValue),
-            //   };
-            //   data = qs.stringify(data);
-          
-            //   API.getStudentInfoById_cl(data).then(res=>{
-                
-            //     this.studentList=res;
-            //   })
-            //   this.setSelectOption()
-            // },
-         
+        
               
             
             
@@ -264,11 +236,5 @@
         
     </script>
      <style scoped>
-    /* .imgdiv{
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    } */
+    
     </style>

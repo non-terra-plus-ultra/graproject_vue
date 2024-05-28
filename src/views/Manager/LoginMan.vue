@@ -26,13 +26,10 @@
             </el-form>
           </div>
           
-               <!-- <div class="msg">
-                Don't have account?
-                <a href="#">Sign up</a>
-            </div> -->
+
           <div class="butt">
             <el-button class="loginButt"  @click="login">Sign in</el-button>
-            <!-- <el-button class="shou" @click="register">注册</el-button> -->
+
           </div> 
         
         </div>
@@ -44,9 +41,7 @@
    import Cookies from 'js-cookie'
     import API from "@/api";
     import qs from "qs";
-  // import { login } from "@/api/login";
-  // import { setToken } from "@/request/auth";
-  
+
   export default {
     name: "login-1",
     data() {

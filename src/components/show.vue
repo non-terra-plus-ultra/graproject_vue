@@ -11,14 +11,7 @@
             </el-date-picker>
         <el-input v-model="input1" placeholder="输入具体用户" style="width: 20%; margin-right: 2%;"></el-input>
         <el-button type="primary" icon="el-icon-search" @click="search()">查询</el-button>
-        <!-- <el-select v-model="optionValue" filterable placeholder="按班级查询" style="width: 20%;" inputmode="false" @change="selectByClass()">
-                    <el-option
-                      v-for="item in options"
-                      :key="item"
-                      :label="item"
-                      :value="item">
-                    </el-option>
-                  </el-select> -->
+  
         <el-table :data="fileList" height="400px" 
         :default-sort = "{prop: 'number', order: 'descending'}"
       highlight-current-row>
@@ -56,42 +49,7 @@
             <div class = "imgdiv">
               <img :src="picurl" alt="beachball" width="100%" height="100%"/>  </div>
             </el-dialog>
-            <!-- <el-dialog
-            title="学生详细信息"
-            :visible.sync="dialogVisible1"
-            width="40%"
-            >
-            <el-form ref="form" :model="form" label-width="100px">
-              <el-form-item label="学号：">
-                <el-span v-model="form.id_st">{{ form.id_st }}</el-span>
-                </el-form-item>
-                <el-form-item label="姓名：">
-                  <el-span v-model="form.name_st"> {{form.name_st}}</el-span>
-                </el-form-item>
-                <el-form-item label="学院：">
-                  <el-span  v-model="form.college"> {{form.college}}</el-span>
-                </el-form-item>
-                <el-form-item label="专业：">
-                  <el-span  v-model="form.major"> {{form.major}}</el-span>
-                </el-form-item>
-                <el-form-item label="班级：">
-                  <el-span  v-model="form.id_cl"> {{form.id_cl}}</el-span>
-                </el-form-item>
-                <el-form-item label="邮箱：">
-                  <el-span v-model="form.mail"> {{form.mail}}</el-span>
-                </el-form-item>
-                <el-form-item label="电话：">
-                  <el-span  v-model="form.phone"> {{form.phone}}</el-span>
-                </el-form-item>
-                
-             
-                <el-form-item>
-                  <el-button type="primary" @click="dialogVisible1=false">确定</el-button>
-                  <el-button @click="dialogVisible1=false">取消</el-button>
-                </el-form-item>
-                
-            </el-form>
-          </el-dialog> -->
+          
           </div>
         </div>
     </template>
@@ -135,13 +93,7 @@
             // this.setSelectOption();
             },
           methods:{
-            // setSelectOption(){
-            //   let data ={};
-            //   data = qs.stringify(data);
-            //   API.getclasses(data).then(res=>{
-            //     this.options=res;
-            //   })
-            // },
+          
             myformatDate(dateString) {  
               const date = new Date(dateString);  
               if (isNaN(date.getTime())) {  
@@ -235,28 +187,7 @@
               //将二进制字符串转为base64字符串
               return window.btoa(binary);
             },
-            // lookStudentInfo(index,row){
-            //   this.dialogVisible1=true
-            //   let data = {
-            //     id_st:row.id_st,
-            //   };
-            //   data = qs.stringify(data);
-            //   API.getStudentInfo(data).then(res=>{
-            //     this.form=res;
-            //   })
-            // },
-            // selectByClass(){
-            //   let data = {
-            //     id_cl:parseInt(this.optionValue),
-            //   };
-            //   data = qs.stringify(data);
-          
-            //   API.getStudentInfoById_cl(data).then(res=>{
-                
-            //     this.studentList=res;
-            //   })
-            //   this.setSelectOption()
-            // },
+         
          
               
             
@@ -266,11 +197,5 @@
         
     </script>
      <style scoped>
-    /* .imgdiv{
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    } */
+   
     </style>

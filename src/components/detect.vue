@@ -76,8 +76,7 @@
            
             
              detect(){
-                
-               
+      
             // if(fileList == undefined || fileList.length <= 0){
             //   this.$notify({
             //   title: '警告',

@@ -56,7 +56,6 @@
                 <el-menu-item index="videoMain">摄像头模拟</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
-            
           </el-menu>
         </el-aside>
       

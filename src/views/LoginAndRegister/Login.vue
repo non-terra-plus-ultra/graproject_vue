@@ -31,13 +31,10 @@
               <span class="shou" @click="forgetpas">forget？</span>
             </div>
           </div>
-               <!-- <div class="msg">
-                Don't have account?
-                <a href="#">Sign up</a>
-            </div> -->
+          
           <div class="butt">
             <el-button class="loginButt"  @click="login">Sign in</el-button>
-            <!-- <el-button class="shou" @click="register">注册</el-button> -->
+
           </div> 
           <div class="msg">
                 Don't have account?
@@ -52,8 +49,7 @@
    import Cookies from 'js-cookie'
     import API from "@/api";
     import qs from "qs";
-  // import { login } from "@/api/login";
-  // import { setToken } from "@/request/auth";
+
   
   export default {
     name: "login-1",
@@ -99,17 +95,15 @@
           
         });
         }else{
-          // alert(this.form.id_st)
-         
-            // alert("我是学生")
+
               let data = {
                   id_st: parseInt(this.form.id_st),
                   pwd_st: this.form.pwd_st
               };
               data = qs.stringify(data);
-              // alert(data);
+  
               API.Login(data).then(res=>{
-                // alert("我是学生2")
+  
                   if(res==='Login fail'){
                     this.$notify.error({
                     title: '错误',

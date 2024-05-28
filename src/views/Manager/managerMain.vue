@@ -17,10 +17,7 @@
                 <el-menu-item index="show" >异物检测记录</el-menu-item>
                 <el-menu-item index="showSegment2" >覆冰检测记录</el-menu-item>
               </el-menu-item-group>
-              <!-- <el-submenu index="1-4">
-                <template slot="title">选项4</template>
-                <el-menu-item index="1-4-1">选项4-1</el-menu-item>
-              </el-submenu> -->
+       
             </el-submenu>
             <el-submenu index="2">
               <template slot="title"><i class="el-icon-message"></i>所有用户</template>
@@ -31,36 +28,12 @@
               </el-menu-item-group>
               </el-submenu>
             
-              <!-- <el-submenu index="1-4">
-                <template slot="title">选项4</template>
-                <el-menu-item index="1-4-1">选项4-1</el-menu-item>
-              </el-submenu> -->
-
-          
-            <!-- <el-submenu index="3">
-              <template slot="title"><i class="el-icon-setting"></i>作业管理</template>
-              <el-menu-item-group>
-                
-                <el-menu-item index="HomeWorkTeacher">查看作业</el-menu-item>
-                <el-menu-item index="HomeWorkInfoTeacher">批改作业</el-menu-item>
-          
-              </el-menu-item-group>
-            </el-submenu> -->
+             
           </el-menu>
         </el-aside>
       
           <el-main style="height:600px;margin: 0%;padding: 0%;" >
-            <!-- <el-table :data="tableData">
-              <el-table-column prop="date" label="日期" width="140">
-              </el-table-column>
-              <el-table-column prop="name" label="姓名" width="120">
-              </el-table-column>
-              <el-table-column prop="address" label="地址">
-              </el-table-column>
-              <el-table-column prop="id" label="地址">
-              </el-table-column>
-              
-            </el-table> -->
+        
             <router-view></router-view>
             
           </el-main>
